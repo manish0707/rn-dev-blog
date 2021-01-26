@@ -5,11 +5,11 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import {ROUTES} from './utils/constants';
+import {ROUTES} from './src/utils/constants';
 
-import Home from './screens/Home';
-import Settings from './screens/Settings';
-import Search from './screens/Search';
+import Home from './src/screens/Home';
+import Settings from './src/screens/Settings';
+import Search from './src/screens/Search';
 
 const Tab = createBottomTabNavigator();
 
@@ -32,7 +32,7 @@ function SettingsStackScreen() {
       <SettingsStack.Screen
         name="Settings"
         component={Settings}
-        options={{title: 'dfdfdf'}}
+        options={{title: 'Settings'}}
       />
     </SettingsStack.Navigator>
   );
